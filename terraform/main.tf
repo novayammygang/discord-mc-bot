@@ -17,8 +17,8 @@ terraform {
 locals {
   # The Google Cloud Project ID that will host and pay for your discord server
   project = "aqueous-ray-347417"
-  region  = "us-east4"
-  zone    = "us-east4-c"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 
   enable_switch_access_group = 0
   discord_switch_access_group = ""
