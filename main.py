@@ -8,14 +8,14 @@ token = ''
 
 
 @bot.command(name="stop")
-async def stop(ctx, *, name):
-    response = requests.urlopen(api_endpoint + 'instance_functions?name=minecraft&state=stop')
+async def stop(ctx):
+    response = requests.get(api_endpoint + 'instance_functions?name=minecraft&state=stop')
     print(response.text)
 
     await ctx.send(response.text)
 
 @bot.command(name="start")
-async def start(ctx, *, name):
+async def start(ctx):
     response = requests.get(api_endpoint + 'instance_functions?name=minecraft&state=start')
     print(response.text)
 
