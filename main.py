@@ -3,8 +3,8 @@ from discord.ext import commands
 import requests
 
 bot = commands.Bot(command_prefix='>', description="This is the Minecraft slave bot")
-api_endpoint = "https://us-east4-aqueous-ray-347417.cloudfunctions.net/"
-token = 'OTY2NzUwNDA3NjEzMzU4MTIw.YmGSeg.bDJ9nfpNWzPcTx789T0_CdhS5do'
+api_endpoint = ''
+token = ''
 
 
 @bot.command(name="stop")
